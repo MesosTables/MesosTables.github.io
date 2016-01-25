@@ -16,18 +16,28 @@
     <div id="content"></div>
 
     <script type="text/babel">
-    	var HelloWorld = React.createClass({
-    		render:function(){
-    			return(
-    				<div>
-    					<h1>hello world</h1>
-    					<p>this is some text</p>
-    				</div>
-    				);
-    		}
-    	});
-React.render(<HelloWorld />, document.body);
-	   
+    	 var Search = React.createClass({
+	    	var API_KEY = "AIzaSyBUjt8wxz41eFErD9Abyqy8kg8xIQdamGI";
+	    	var TERM = "Dominate The Foe- Ked Woodley";
+
+				/*YTSearch({key: API_KEY, term:TERM}, videos =>{
+					//this will set the videos state to the videos returned from the API 
+					this.setState({
+						videos: videos,
+						//set selectedVideo as the first video
+						selectedVideo: videos[0]
+					});
+				});*/
+
+				render(){
+					console.log(test);
+					return (
+					<div>stuff</div>);
+				}
+			});
+
+			ReactDOM.render(<Search />, document.querySelector('.content'));
+
     </script>
   </body>
 </html>
